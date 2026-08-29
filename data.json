@@ -1,12 +1,13 @@
 {
   "nadpis": "Letáky pro dědu",
-  "datumAktualizace": "📅 aktualizace 29.8.2026",
+  "datumAktualizace": "📅 Aktualizováno: 29. srpna 2026",
   "aktualni": {
     "popisNadpisu": "Platné letáky (tento týden)",
     "obchody": [
       {
         "nazev": "Lidl",
         "dostupne": true,
+        "platnostDo": "2026-09-02",
         "barva": "#0050AA",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -19,6 +20,7 @@
       {
         "nazev": "Penny",
         "dostupne": true,
+        "platnostDo": "2026-09-01",
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -31,6 +33,7 @@
       {
         "nazev": "Kaufland",
         "dostupne": false,
+        "platnostDo": "2026-09-01",
         "barva": "#E60012",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -43,6 +46,7 @@
       {
         "nazev": "Billa",
         "dostupne": false,
+        "platnostDo": "2026-09-02",
         "barva": "#FFED00",
         "barvaTextu": "#000000",
         "url": [
@@ -60,6 +64,7 @@
       {
         "nazev": "Lidl (Nový)",
         "dostupne": true,
+        "platnostDo": "2026-09-06",
         "zpravaNezn": "⚠️ Lidl (nový) leták ještě nevyšel.",
         "barva": "#003377",
         "barvaTextu": "#FFFFFF",
@@ -73,6 +78,7 @@
       {
         "nazev": "Penny (Nový)",
         "dostupne": false,
+        "platnostDo": "2026-09-10",
         "zpravaNezn": "⚠️ Penny (nový) leták ještě nevyšel.",
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
@@ -86,6 +92,7 @@
       {
         "nazev": "Kaufland (Nový)",
         "dostupne": false,
+        "platnostDo": "2026-09-08",
         "zpravaNezn": "⚠️ Kaufland (nový) leták ještě nevyšel.",
         "barva": "#E60012",
         "barvaTextu": "#FFFFFF",
@@ -99,6 +106,7 @@
       {
         "nazev": "Billa (Nový)",
         "dostupne": false,
+        "platnostDo": "2026-09-09",
         "zpravaNezn": "⚠️ Billa (nový) leták ještě nevyšel.",
         "barva": "#FFED00",
         "barvaTextu": "#000000",
