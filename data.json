@@ -26,6 +26,30 @@
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast3.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast4.jpg"
         ]
+      },
+      {
+        "nazev": "Kaufland",
+        "dostupne": false,
+        "barva": "#E60012",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Billa",
+        "dostupne": false,
+        "barva": "#FFED00",
+        "barvaTextu": "#000000",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-cast4.jpg"
+        ]
       }
     ]
   },
@@ -56,6 +80,32 @@
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast2.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast3.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Kaufland (Nový)",
+        "dostupne": false,
+        "zpravaNezn": "⚠️ Kaufland (nový) leták ještě nevyšel.",
+        "barva": "#E60012",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-novy-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-novy-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-novy-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-novy-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Billa (Nový)",
+        "dostupne": false,
+        "zpravaNezn": "⚠️ Billa (nový) leták ještě nevyšel.",
+        "barva": "#FFED00",
+        "barvaTextu": "#000000",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letakh-pro-dedu/refs/heads/main/billa-novy-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast4.jpg"
         ]
       }
     ]
