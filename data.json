@@ -4,7 +4,13 @@
     {
       "nazev": "Lidl",
       "barva": "#0050AA",
-      "url": "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl.jpg"
+      "barvaTextu": "#FFFFFF",
+      "url": [
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast1.jpg",
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast2.jpg",
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast3.jpg",
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast4.jpg"
+      ]
     }
   ]
 }
