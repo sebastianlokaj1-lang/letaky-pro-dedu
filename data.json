@@ -1,0 +1,36 @@
+{
+  "nadpis": "Aktuální letáky pro dědu",
+  "obchody": [
+    {
+      "nazev": "Albert",
+      "barva": "#00539F",
+      "url": "https://www.kupino.cz/akcni-letaky/albert"
+    },
+    {
+      "nazev": "Lidl",
+      "barva": "#0050AA",
+      "url": "https://www.kupino.cz/akcni-letaky/lidl"
+    },
+    {
+      "nazev": "Kaufland",
+      "barva": "#E2001A",
+      "url": "https://www.kupino.cz/akcni-letaky/kaufland"
+    },
+    {
+      "nazev": "Penny",
+      "barva": "#FFCC00",
+      "barvaTextu": "#000000",
+      "url": "https://www.kupino.cz/akcni-letaky/penny-market"
+    },
+    {
+      "nazev": "Billa",
+      "barva": "#ED1B2D",
+      "url": "https://www.kupino.cz/akcni-letaky/billa"
+    },
+    {
+      "nazev": "Tesco",
+      "barva": "#00539F",
+      "url": "https://www.kupino.cz/akcni-letaky/tesco"
+    }
+  ]
+}
