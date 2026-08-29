@@ -9,7 +9,17 @@
         "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast1.jpg",
         "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast2.jpg",
         "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast3.jpg",
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast4.jpg"
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-cr-dedu/refs/heads/main/cely-letak-cast4.jpg"
+      ]
+    },
+    {
+      "nazev": "Penny",
+      "barva": "#E30613",
+      "barvaTextu": "#FFFFFF",
+      "url": [
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast1.jpg",
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast2.jpg",
+        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast3.jpg"
       ]
     }
   ]
