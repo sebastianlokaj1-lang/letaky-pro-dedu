@@ -33,7 +33,7 @@
       {
         "nazev": "Penny",
         "dostupne": true,
-        "platnostDo": "2026-09-03",
+        "platnostDo": "2026-09-01",
         "jeNovyDnes": false,
         "zaviracka": {
           "1": "21:00",
@@ -108,7 +108,7 @@
     "obchody": [
       {
         "nazev": "Lidl (Nový)",
-        "dostupne": false,
+        "dostupne": true,
         "platnostDo": "2026-09-09",
         "jeNovyDnes": false,
         "zpravaNezn": "⚠️ Lidl (nový) leták ještě nevyšel.",
