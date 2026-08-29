@@ -5,6 +5,7 @@
     "obchody": [
       {
         "nazev": "Lidl",
+        "dostupne": true,
         "barva": "#0050AA",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -16,6 +17,7 @@
       },
       {
         "nazev": "Penny",
+        "dostupne": true,
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -32,6 +34,8 @@
     "obchody": [
       {
         "nazev": "Lidl (Nový)",
+        "dostupne": true,
+        "zpravaNezn": "⚠️ Lidl (nový) leták ještě nevyšel.",
         "barva": "#003377",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -43,6 +47,8 @@
       },
       {
         "nazev": "Penny (Nový)",
+        "dostupne": false,
+        "zpravaNezn": "⚠️ Penny (nový) leták ještě nevyšel.",
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
         "url": [
