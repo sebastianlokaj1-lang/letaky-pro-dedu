@@ -1,21 +1,20 @@
 {
   "nadpis": "Letáky pro dědu",
   "datumAktualizace": "📅 Aktualizováno: 29. srpna 2026",
-  "novaVerzeZprava": "",
+  "novaVerzeZprava": "🎉 Novinka v aplikaci: Přidali jsme Tesco, Dr. Max a možnost schovat obchody!",
   "upozorneniSvatek": "",
-  "tipNaNakup": "Tip od AI:",
+  "tipNaNakup": "Tip od Ai:",
   "aktualni": {
     "popisNadpisu": "Platné letáky (tento týden)",
     "obchody": [
       {
         "nazev": "Lidl",
         "dostupne": true,
+        "skrytObchod": false,
         "platnostDo": "2026-09-02",
         "jeNovyDnes": true,
         "akce1plus1": "",
-        "zaviracka": {
-          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
-        },
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
         "barva": "#0050AA",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -28,12 +27,11 @@
       {
         "nazev": "Penny",
         "dostupne": true,
+        "skrytObchod": false,
         "platnostDo": "2026-09-03",
         "jeNovyDnes": false,
         "akce1plus1": "",
-        "zaviracka": {
-          "1": "21:00", "2": "21:00", "3": "21:00", "4": "21:00", "5": "21:00", "6": "21:00", "0": "21:00"
-        },
+        "zaviracka": { "1": "21:00", "2": "21:00", "3": "21:00", "4": "21:00", "5": "21:00", "6": "21:00", "0": "21:00" },
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -46,13 +44,11 @@
       {
         "nazev": "Kaufland",
         "dostupne": false,
+        "skrytObchod": false,
         "platnostDo": "2026-09-01",
         "jeNovyDnes": false,
         "akce1plus1": "",
-        "zpravaNezn": "⚠️ Kaufland leták ještě nevyšel.",
-        "zaviracka": {
-          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
-        },
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
         "barva": "#E60012",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -65,13 +61,11 @@
       {
         "nazev": "Billa",
         "dostupne": false,
+        "skrytObchod": false,
         "platnostDo": "2026-09-02",
         "jeNovyDnes": false,
         "akce1plus1": "",
-        "zpravaNezn": "⚠️ Billa leták ještě nevyšel.",
-        "zaviracka": {
-          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
-        },
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
         "barva": "#FFED00",
         "barvaTextu": "#000000",
         "url": [
@@ -79,6 +73,40 @@
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-cast2.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-cast3.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Tesco",
+        "dostupne": false,
+        "skrytObchod": false,
+        "platnostDo": "2026-09-04",
+        "jeNovyDnes": false,
+        "akce1plus1": "",
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
+        "barva": "#00539F",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Dr. Max",
+        "dostupne": false,
+        "skrytObchod": false,
+        "platnostDo": "2026-09-07",
+        "jeNovyDnes": false,
+        "akce1plus1": "",
+        "zaviracka": { "1": "20:00", "2": "20:00", "3": "20:00", "4": "20:00", "5": "20:00", "6": "18:00", "0": "16:00" },
+        "barva": "#008751",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-cast4.jpg"
         ]
       }
     ]
@@ -88,7 +116,8 @@
     "obchody": [
       {
         "nazev": "Lidl (Nový)",
-        "dostupne": false,
+        "dostupne": true,
+        "skrytObchod": false,
         "platnostDo": "2026-09-09",
         "jeNovyDnes": false,
         "akce1plus1": "",
@@ -105,6 +134,7 @@
       {
         "nazev": "Penny (Nový)",
         "dostupne": false,
+        "skrytObchod": false,
         "platnostDo": "2026-09-10",
         "jeNovyDnes": false,
         "akce1plus1": "",
@@ -121,6 +151,7 @@
       {
         "nazev": "Kaufland (Nový)",
         "dostupne": false,
+        "skrytObchod": false,
         "platnostDo": "2026-09-08",
         "jeNovyDnes": false,
         "akce1plus1": "",
@@ -137,6 +168,7 @@
       {
         "nazev": "Billa (Nový)",
         "dostupne": false,
+        "skrytObchod": false,
         "platnostDo": "2026-09-09",
         "jeNovyDnes": false,
         "akce1plus1": "",
@@ -148,6 +180,40 @@
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast2.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast3.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Tesco (Nový)",
+        "dostupne": false,
+        "skrytObchod": false,
+        "platnostDo": "2026-09-11",
+        "jeNovyDnes": false,
+        "akce1plus1": "",
+        "zpravaNezn": "⚠️ Tesco (nový) leták ještě nevyšel.",
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
+        "barva": "#00539F", "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-novy-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-novy-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-novy-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/tesco-novy-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Dr. Max (Nový)",
+        "dostupne": false,
+        "skrytObchod": false,
+        "platnostDo": "2026-09-14",
+        "jeNovyDnes": false,
+        "akce1plus1": "",
+        "zpravaNezn": "⚠️ Dr. Max (nový) leták ještě nevyšel.",
+        "zaviracka": { "1": "20:00", "2": "20:00", "3": "20:00", "4": "20:00", "5": "20:00", "6": "18:00", "0": "16:00" },
+        "barva": "#008751", "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-novy-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-novy-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-novy-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/drmax-novy-cast4.jpg"
         ]
       }
     ]
