@@ -60,7 +60,7 @@
       },
       {
         "nazev": "Billa",
-        "dostupne": false,
+        "dostupne": true,
         "skrytObchod": false,
         "platnostDo": "2026-09-02",
         "jeNovyDnes": false,
@@ -168,7 +168,7 @@
       {
         "nazev": "Billa (Nový)",
         "dostupne": false,
-        "skrytObchod": false,
+        "skrytObchod": true,
         "platnostDo": "2026-09-09",
         "jeNovyDnes": false,
         "akce1plus1": "",
