@@ -4,18 +4,28 @@
     {
       "nazev": "Lidl",
       "barva": "#0050AA",
-      "url": "https://www.lidl.cz/c/akcni-letak/s10008644"
+      "url": "https://www.kimbino.cz/lidl/"
     },
     {
       "nazev": "Kaufland",
       "barva": "#E2001A",
-      "url": "https://prodejny.kaufland.cz/letak.html"
+      "url": "https://www.kimbino.cz/kaufland/"
     },
     {
       "nazev": "Penny",
       "barva": "#FFCC00",
       "barvaTextu": "#000000",
-      "url": "https://www.penny.cz/?tab=nabidky/letaky"
+      "url": "https://www.kimbino.cz/penny-market/"
+    },
+    {
+      "nazev": "Albert",
+      "barva": "#00539F",
+      "url": "https://www.kimbino.cz/albert/"
+    },
+    {
+      "nazev": "Billa",
+      "barva": "#ED1B2D",
+      "url": "https://www.kimbino.cz/billa/"
     }
   ]
 }
