@@ -1,5 +1,6 @@
 {
   "nadpis": "Letáky pro dědu",
+  "datumAktualizace": "📅 aktualizace 29.8.2026",
   "aktualni": {
     "popisNadpisu": "Platné letáky (tento týden)",
     "obchody": [
@@ -103,7 +104,7 @@
         "barvaTextu": "#000000",
         "url": [
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast1.jpg",
-          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letakh-pro-dedu/refs/heads/main/billa-novy-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast2.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast3.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast4.jpg"
         ]
