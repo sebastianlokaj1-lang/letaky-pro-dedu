@@ -4,33 +4,33 @@
     {
       "nazev": "Albert",
       "barva": "#00539F",
-      "url": "https://www.kupino.cz/akcni-letaky/albert"
+      "url": "https://www.akcniceny.cz/letak/albert/"
     },
     {
       "nazev": "Lidl",
       "barva": "#0050AA",
-      "url": "https://www.kupino.cz/akcni-letaky/lidl"
+      "url": "https://www.akcniceny.cz/letak/lidl/"
     },
     {
       "nazev": "Kaufland",
       "barva": "#E2001A",
-      "url": "https://www.kupino.cz/akcni-letaky/kaufland"
+      "url": "https://www.akcniceny.cz/letak/kaufland/"
     },
     {
       "nazev": "Penny",
       "barva": "#FFCC00",
       "barvaTextu": "#000000",
-      "url": "https://www.kupino.cz/akcni-letaky/penny-market"
+      "url": "https://www.akcniceny.cz/letak/penny-market/"
     },
     {
       "nazev": "Billa",
       "barva": "#ED1B2D",
-      "url": "https://www.kupino.cz/akcni-letaky/billa"
+      "url": "https://www.akcniceny.cz/letak/billa/"
     },
     {
       "nazev": "Tesco",
       "barva": "#00539F",
-      "url": "https://www.kupino.cz/akcni-letaky/tesco"
+      "url": "https://www.akcniceny.cz/letak/tesco/"
     }
   ]
 }
