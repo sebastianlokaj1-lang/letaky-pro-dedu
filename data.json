@@ -1,26 +1,57 @@
 {
-  "nadpis": "Aktuální letáky pro dědu",
-  "obchody": [
-    {
-      "nazev": "Lidl",
-      "barva": "#0050AA",
-      "barvaTextu": "#FFFFFF",
-      "url": [
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast1.jpg",
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast2.jpg",
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast3.jpg",
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-cr-dedu/refs/heads/main/cely-letak-cast4.jpg"
-      ]
-    },
-    {
-      "nazev": "Penny",
-      "barva": "#E30613",
-      "barvaTextu": "#FFFFFF",
-      "url": [
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast1.jpg",
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast2.jpg",
-        "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast3.jpg"
-      ]
-    }
-  ]
+  "nadpis": "Letáky pro dědu",
+  "aktualni": {
+    "popisNadpisu": "Platné letáky (tento týden)",
+    "obchody": [
+      {
+        "nazev": "Lidl",
+        "barva": "#0050AA",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/cely-letak-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Penny",
+        "barva": "#E30613",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-cast4.jpg"
+        ]
+      }
+    ]
+  },
+  "novejsi": {
+    "popisNadpisu": "Novější letáky (od příštího týdne)",
+    "obchody": [
+      {
+        "nazev": "Lidl (Nový)",
+        "barva": "#003377",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl-novy-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl-novy-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl-novy-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl-novy-cast4.jpg"
+        ]
+      },
+      {
+        "nazev": "Penny (Nový)",
+        "barva": "#E30613",
+        "barvaTextu": "#FFFFFF",
+        "url": [
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast1.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast2.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast3.jpg",
+          "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast4.jpg"
+        ]
+      }
+    ]
+  }
 }
