@@ -1,8 +1,9 @@
 {
-  "nadpis": "Letáky pro dědu od Séby",
+  "nadpis": "Letáky pro dědu",
   "datumAktualizace": "📅 Aktualizováno: 29. srpna 2026",
+  "novaVerzeZprava": "🎉 Novinka v aplikaci: Přidali jsme možnost sledovat zavírací dobu obchodů a čerstvé letáky!",
   "upozorneniSvatek": "",
-  "tipNaNakup": " Tip na nákup od AI:",
+  "tipNaNakup": "💡 Dnešní tip od Sebastiana: V Lidlu mají v akci tavené sýry a v Penny nezapomeň mrknout na kávu!",
   "aktualni": {
     "popisNadpisu": "Platné letáky (tento týden)",
     "obchody": [
@@ -10,6 +11,16 @@
         "nazev": "Lidl",
         "dostupne": true,
         "platnostDo": "2026-09-02",
+        "jeNovyDnes": true,
+        "zaviracka": {
+          "1": "22:00",
+          "2": "22:00",
+          "3": "22:00",
+          "4": "22:00",
+          "5": "22:00",
+          "6": "22:00",
+          "0": "22:00"
+        },
         "barva": "#0050AA",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -22,7 +33,17 @@
       {
         "nazev": "Penny",
         "dostupne": true,
-        "platnostDo": "2026-09-01",
+        "platnostDo": "2026-09-03",
+        "jeNovyDnes": false,
+        "zaviracka": {
+          "1": "21:00",
+          "2": "21:00",
+          "3": "21:00",
+          "4": "21:00",
+          "5": "21:00",
+          "6": "21:00",
+          "0": "21:00"
+        },
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -36,6 +57,17 @@
         "nazev": "Kaufland",
         "dostupne": false,
         "platnostDo": "2026-09-01",
+        "jeNovyDnes": false,
+        "zpravaNezn": "⚠️ Kaufland leták ještě nevyšel.",
+        "zaviracka": {
+          "1": "22:00",
+          "2": "22:00",
+          "3": "22:00",
+          "4": "22:00",
+          "5": "22:00",
+          "6": "22:00",
+          "0": "22:00"
+        },
         "barva": "#E60012",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -49,6 +81,17 @@
         "nazev": "Billa",
         "dostupne": false,
         "platnostDo": "2026-09-02",
+        "jeNovyDnes": false,
+        "zpravaNezn": "⚠️ Billa leták ještě nevyšel.",
+        "zaviracka": {
+          "1": "22:00",
+          "2": "22:00",
+          "3": "22:00",
+          "4": "22:00",
+          "5": "22:00",
+          "6": "22:00",
+          "0": "22:00"
+        },
         "barva": "#FFED00",
         "barvaTextu": "#000000",
         "url": [
@@ -65,9 +108,13 @@
     "obchody": [
       {
         "nazev": "Lidl (Nový)",
-        "dostupne": true,
-        "platnostDo": "2026-09-06",
+        "dostupne": false,
+        "platnostDo": "2026-09-09",
+        "jeNovyDnes": false,
         "zpravaNezn": "⚠️ Lidl (nový) leták ještě nevyšel.",
+        "zaviracka": {
+          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
+        },
         "barva": "#003377",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -81,7 +128,11 @@
         "nazev": "Penny (Nový)",
         "dostupne": false,
         "platnostDo": "2026-09-10",
+        "jeNovyDnes": false,
         "zpravaNezn": "⚠️ Penny (nový) leták ještě nevyšel.",
+        "zaviracka": {
+          "1": "21:00", "2": "21:00", "3": "21:00", "4": "21:00", "5": "21:00", "6": "21:00", "0": "21:00"
+        },
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -95,7 +146,11 @@
         "nazev": "Kaufland (Nový)",
         "dostupne": false,
         "platnostDo": "2026-09-08",
+        "jeNovyDnes": false,
         "zpravaNezn": "⚠️ Kaufland (nový) leták ještě nevyšel.",
+        "zaviracka": {
+          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
+        },
         "barva": "#E60012",
         "barvaTextu": "#FFFFFF",
         "url": [
@@ -109,7 +164,11 @@
         "nazev": "Billa (Nový)",
         "dostupne": false,
         "platnostDo": "2026-09-09",
+        "jeNovyDnes": false,
         "zpravaNezn": "⚠️ Billa (nový) leták ještě nevyšel.",
+        "zaviracka": {
+          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
+        },
         "barva": "#FFED00",
         "barvaTextu": "#000000",
         "url": [
