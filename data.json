@@ -4,17 +4,23 @@
     {
       "nazev": "Albert",
       "barva": "#00539F",
-      "url": "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/albert.pdf"
+      "url": "https://www.kimbino.cz/albert/"
     },
     {
       "nazev": "Lidl",
       "barva": "#0050AA",
-      "url": "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl.pdf"
+      "url": "https://www.kimbino.cz/lidl/"
     },
     {
       "nazev": "Kaufland",
       "barva": "#E2001A",
-      "url": "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland.pdf"
+      "url": "https://www.kimbino.cz/kaufland/"
+    },
+    {
+      "nazev": "Penny",
+      "barva": "#FFCC00",
+      "barvaTextu": "#000000",
+      "url": "https://www.kimbino.cz/penny-market/"
     }
   ]
 }
