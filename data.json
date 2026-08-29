@@ -95,7 +95,7 @@
       {
         "nazev": "Dr. Max",
         "dostupne": false,
-        "skrytObchod": false,
+        "skrytObchod": true,
         "platnostDo": "2026-09-07",
         "jeNovyDnes": false,
         "akce1plus1": "",
@@ -202,7 +202,7 @@
       {
         "nazev": "Dr. Max (Nový)",
         "dostupne": false,
-        "skrytObchod": false,
+        "skrytObchod": true,
         "platnostDo": "2026-09-14",
         "jeNovyDnes": false,
         "akce1plus1": "",
