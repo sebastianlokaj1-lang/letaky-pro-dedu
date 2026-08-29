@@ -43,7 +43,7 @@
       },
       {
         "nazev": "Kaufland",
-        "dostupne": false,
+        "dostupne": true,
         "skrytObchod": false,
         "platnostDo": "2026-09-01",
         "jeNovyDnes": false,
