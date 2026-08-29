@@ -1,9 +1,9 @@
 {
   "nadpis": "Letáky pro dědu",
   "datumAktualizace": "📅 Aktualizováno: 29. srpna 2026",
-  "novaVerzeZprava": "🎉 Novinka v aplikaci: Přidali jsme možnost sledovat zavírací dobu obchodů a čerstvé letáky!",
+  "novaVerzeZprava": "",
   "upozorneniSvatek": "",
-  "tipNaNakup": "💡 Dnešní tip od Sebastiana: V Lidlu mají v akci tavené sýry a v Penny nezapomeň mrknout na kávu!",
+  "tipNaNakup": "Tip od AI:",
   "aktualni": {
     "popisNadpisu": "Platné letáky (tento týden)",
     "obchody": [
@@ -12,14 +12,9 @@
         "dostupne": true,
         "platnostDo": "2026-09-02",
         "jeNovyDnes": true,
+        "akce1plus1": "",
         "zaviracka": {
-          "1": "22:00",
-          "2": "22:00",
-          "3": "22:00",
-          "4": "22:00",
-          "5": "22:00",
-          "6": "22:00",
-          "0": "22:00"
+          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
         },
         "barva": "#0050AA",
         "barvaTextu": "#FFFFFF",
@@ -33,16 +28,11 @@
       {
         "nazev": "Penny",
         "dostupne": true,
-        "platnostDo": "2026-09-01",
+        "platnostDo": "2026-09-03",
         "jeNovyDnes": false,
+        "akce1plus1": "",
         "zaviracka": {
-          "1": "21:00",
-          "2": "21:00",
-          "3": "21:00",
-          "4": "21:00",
-          "5": "21:00",
-          "6": "21:00",
-          "0": "21:00"
+          "1": "21:00", "2": "21:00", "3": "21:00", "4": "21:00", "5": "21:00", "6": "21:00", "0": "21:00"
         },
         "barva": "#E30613",
         "barvaTextu": "#FFFFFF",
@@ -58,15 +48,10 @@
         "dostupne": false,
         "platnostDo": "2026-09-01",
         "jeNovyDnes": false,
+        "akce1plus1": "",
         "zpravaNezn": "⚠️ Kaufland leták ještě nevyšel.",
         "zaviracka": {
-          "1": "22:00",
-          "2": "22:00",
-          "3": "22:00",
-          "4": "22:00",
-          "5": "22:00",
-          "6": "22:00",
-          "0": "22:00"
+          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
         },
         "barva": "#E60012",
         "barvaTextu": "#FFFFFF",
@@ -82,15 +67,10 @@
         "dostupne": false,
         "platnostDo": "2026-09-02",
         "jeNovyDnes": false,
+        "akce1plus1": "",
         "zpravaNezn": "⚠️ Billa leták ještě nevyšel.",
         "zaviracka": {
-          "1": "22:00",
-          "2": "22:00",
-          "3": "22:00",
-          "4": "22:00",
-          "5": "22:00",
-          "6": "22:00",
-          "0": "22:00"
+          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
         },
         "barva": "#FFED00",
         "barvaTextu": "#000000",
@@ -108,15 +88,13 @@
     "obchody": [
       {
         "nazev": "Lidl (Nový)",
-        "dostupne": true,
+        "dostupne": false,
         "platnostDo": "2026-09-09",
         "jeNovyDnes": false,
+        "akce1plus1": "",
         "zpravaNezn": "⚠️ Lidl (nový) leták ještě nevyšel.",
-        "zaviracka": {
-          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
-        },
-        "barva": "#003377",
-        "barvaTextu": "#FFFFFF",
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
+        "barva": "#003377", "barvaTextu": "#FFFFFF",
         "url": [
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl-novy-cast1.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/lidl-novy-cast2.jpg",
@@ -129,12 +107,10 @@
         "dostupne": false,
         "platnostDo": "2026-09-10",
         "jeNovyDnes": false,
+        "akce1plus1": "",
         "zpravaNezn": "⚠️ Penny (nový) leták ještě nevyšel.",
-        "zaviracka": {
-          "1": "21:00", "2": "21:00", "3": "21:00", "4": "21:00", "5": "21:00", "6": "21:00", "0": "21:00"
-        },
-        "barva": "#E30613",
-        "barvaTextu": "#FFFFFF",
+        "zaviracka": { "1": "21:00", "2": "21:00", "3": "21:00", "4": "21:00", "5": "21:00", "6": "21:00", "0": "21:00" },
+        "barva": "#E30613", "barvaTextu": "#FFFFFF",
         "url": [
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast1.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/penny-novy-cast2.jpg",
@@ -147,12 +123,10 @@
         "dostupne": false,
         "platnostDo": "2026-09-08",
         "jeNovyDnes": false,
+        "akce1plus1": "",
         "zpravaNezn": "⚠️ Kaufland (nový) leták ještě nevyšel.",
-        "zaviracka": {
-          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
-        },
-        "barva": "#E60012",
-        "barvaTextu": "#FFFFFF",
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
+        "barva": "#E60012", "barvaTextu": "#FFFFFF",
         "url": [
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-novy-cast1.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/kaufland-novy-cast2.jpg",
@@ -165,12 +139,10 @@
         "dostupne": false,
         "platnostDo": "2026-09-09",
         "jeNovyDnes": false,
+        "akce1plus1": "",
         "zpravaNezn": "⚠️ Billa (nový) leták ještě nevyšel.",
-        "zaviracka": {
-          "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00"
-        },
-        "barva": "#FFED00",
-        "barvaTextu": "#000000",
+        "zaviracka": { "1": "22:00", "2": "22:00", "3": "22:00", "4": "22:00", "5": "22:00", "6": "22:00", "0": "22:00" },
+        "barva": "#FFED00", "barvaTextu": "#000000",
         "url": [
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast1.jpg",
           "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/billa-novy-cast2.jpg",
