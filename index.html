@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letáky pro dědu</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --text-color: #333;
+            --card-bg: #fff;
+            --header-color: #111;
+            --subtext-color: #555;
+            --modal-bg: #e9ecef;
+            --font-scale: 1rem;
+        }
+
+        body.dark-mode {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --header-color: #ffffff;
+            --subtext-color: #b0b0b0;
+            --modal-bg: #1a1a1a;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: var(--font-scale);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        @keyframes poskok {
+            0% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-15px) scale(1.1); }
+            100% { transform: translateY(0) scale(1); }
+        }
+        #banner-kosik {
+            background: linear-gradient(135deg, #2e7d32, #4caf50);
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: 0 auto 20px auto;
+            font-size: 1.3rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            animation: poskok 1s infinite ease-in-out;
+            transition: opacity 0.5s ease;
+        }
+        .ikona-kosik {
+            font-size: 2rem;
+        }
+
+        .horni-lista {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .tlacitko-nav {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 2px solid #ccc;
+            border-radius: 12px;
+            padding: 8px 14px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .tlacitko-nav:hover {
+            background-color: #e0e0e0;
+        }
+
+        .prihlaseni-bar {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 10px 20px;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: 0 auto 20px auto;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        body.dark-mode .prihlaseni-bar {
+            background-color: #1a2634;
+            color: #90caf9;
+        }
+        .tlacitko-prihlasit {
+            background-color: #0277bd;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .tlacitko-prihlasit:hover {
+            background-color: #01579b;
+        }
+
+        h1 {
+            font-size: calc(2.8rem * var(--font-scale) / 1rem);
+            margin-bottom: 5px;
+            color: var(--header-color);
+        }
+        p.podpis {
+            font-size: calc(1.3rem * var(--font-scale) / 1rem);
+            color: var(--subtext-color);
+            margin-bottom: 10px;
+        }
+
+        .info-boxik {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        .info-stitEK {
+            font-size: calc(1.1rem * var(--font-scale) / 1rem);
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .info-den {
+            background-color: #e3f2fd;
+            color: #0277bd;
+        }
+        .info-teplota {
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+        .info-svatek {
+            background-color: #ffebee;
+            color: #c62828;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 15px auto;
+        }
+        .info-tip {
+            background-color: #fff8e1;
+            color: #f57f17;
+            border: 2px dashed #ffecb3;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 25px auto;
+            text-align: left;
+            padding: 12px 20px;
+        }
+
+        .prepinac-skupin {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+        .tlacitko-skupiny {
+            background-color: #e0e0e0;
+            color: #333;
+            border: none;
+            border-radius: 12px;
+            padding: 15px 30px;
+            font-size: calc(1.4rem * var(--font-scale) / 1rem);
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .tlacitko-skupiny.aktivni {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        .mrizka {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .tlacitko-obchod {
+            border: none;
+            border-radius: 15px;
+            padding: 25px 20px;
+            font-size: calc(1.8rem * var(--font-scale) / 1rem);
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            min-height: 120px;
+            width: 100%;
+            transition: transform 0.1s;
+        }
+        .tlacitko-obchod:hover {
+            transform: scale(1.03);
+        }
+
+        .platnost-badge {
+            font-size: calc(0.85rem * var(--font-scale) / 1rem);
+            background: rgba(0, 0, 0, 0.25);
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: normal;
+        }
+        .zaviracka-badge {
+            font-size: calc(0.85rem * var(--font-scale) / 1rem);
+            background: #d32f2f;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .novy-badge {
+            font-size: calc(0.85rem * var(--font-scale) / 1rem);
+            background: #ff9800;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .akce1plus1-badge {
+            font-size: calc(0.85rem * var(--font-scale) / 1rem);
+            background: #e91e63;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .zprava-chybi-obchod {
+            font-size: calc(1.2rem * var(--font-scale) / 1rem);
+            color: #d32f2f;
+            background-color: #ffebee;
+            padding: 25px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 120px;
+            border: 2px dashed #ffcdd2;
+        }
+        
+        #sekce-okna {
+            display: none;
+            margin-top: 35px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+        }
+        .hlavicka-okna {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skupina-tlacitek-okna {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .tlacitko-email {
+            background-color: #0277bd;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .tlacitko-email:hover {
+            background-color: #01579b;
+        }
+        .tlacitko-zavrit {
+            background-color: #e53935;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .panel-zoom {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 10px;
+            border-radius: 12px;
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+            display: none;
+        }
+        .tlacitko-zoom {
+            background-color: #fff;
+            color: #222;
+            border: none;
+            width: 50px;
+            height: 50px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .tlacitko-nahoru {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background-color: #2e7d32;
+            color: #fff;
+            border: none;
+            width: 55px;
+            height: 55px;
+            font-size: 1.8rem;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 100;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #obsah-letaku {
+            padding: 20px;
+            background-color: var(--modal-bg);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            overflow-x: auto;
+        }
+        .obrazek-letaku {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+            display: block;
+            transition: width 0.2s ease;
+        }
+
+        .patka-chyba {
+            margin-top: 50px;
+            padding: 20px;
+        }
+        .tlacitko-chyba {
+            background-color: #757575;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .tlacitko-chyba:hover {
+            background-color: #616161;
+        }
+        
+        .stav {
+            font-size: 1.2rem;
+            color: var(--subtext-color);
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="banner-kosik">
+        <span class="ikona-kosik">🛒</span>
+        <span>Veselý nákupní den, dědo! Připraveno pro slevy.</span>
+    </div>
+
+    <div class="prihlaseni-bar" id="prihlaseni-bar">
+        <span id="text-uzivatel">👤 Přihlášen: Děda</span>
+        <button class="tlacitko-prihlasit" onclick="zmenUzivatele()">Změnit</button>
+    </div>
+
+    <div class="horni-lista">
+        <button class="tlacitko-nav" onclick="zmenPismo(0.1)" title="Větší písmo">A+</button>
+        <button class="tlacitko-nav" onclick="zmenPismo(-0.1)" title="Menší písmo">A-</button>
+        <button class="tlacitko-nav" id="btn-darkmode" onclick="prepnoutDarkMode()">🌙</button>
+    </div>
+
+    <h1 id="vitaci-nadpis">Načítám...</h1>
+    <p class="podpis" id="podnadpis">Vyberte kategorii letáků.</p>
+    
+    <div class="info-boxik" id="box-svatek" style="display:none;">
+        <span class="info-stitEK info-svatek" id="text-svatek"></span>
+    </div>
+
+    <div class="info-boxik" id="box-tip" style="display:none;">
+        <span class="info-stitEK info-tip" id="text-tip"></span>
+    </div>
+
+    <div class="info-boxik">
+        <span class="info-stitEK info-den" id="text-dnesni-den">Načítám den...</span>
+        <span class="info-stitEK info-teplota" id="text-teplota">🌡️ Praha: Načítám...</span>
+        <span class="info-stitEK" id="text-aktualizace">Načítám datum...</span>
+    </div>
+
+    <div class="prepinac-skupin">
+        <button class="tlacitko-skupiny aktivni" id="btn-aktualni" onclick="zmenSkupinu('aktualni')">📋 Aktuální letáky</button>
+        <button class="tlacitko-skupiny" id="btn-novejsi" onclick="zmenSkupinu('novejsi')">✨ Novější letáky</button>
+    </div>
+
+    <div class="mrizka" id="kontejner-obchodu"></div>
+
+    <div id="sekce-okna">
+        <div class="hlavicka-okna">
+            <span id="nazev-otevreneho-obchodu">Leták</span>
+            <div class="skupina-tlacitek-okna">
+                <button class="tlacitko-email" onclick="poslatLetakEmailem()">✉️ Poslat e-mailem</button>
+                <button class="tlacitko-zavrit" onclick="zavritOkno()">Zavřít leták ✕</button>
+            </div>
+        </div>
+        <div id="obsah-letaku"></div>
+    </div>
+
+    <div class="panel-zoom" id="panel-zoom">
+        <button class="tlacitko-zoom" onclick="zmenZoom(-15)">-</button>
+        <button class="tlacitko-zoom" onclick="zmenZoom(15)">+</button>
+    </div>
+
+    <button class="tlacitko-nahoru" id="btn-nahoru" onclick="skokNahoru()">▲</button>
+
+    <div class="patka-chyba">
+        <button class="tlacitko-chyba" onclick="nahlasitChybu()">🛠️ Nahlásit problém s aplikací</button>
+    </div>
+
+    <div class="stav" id="stav-aktualizace"></div>
+
+    <script>
+        const AKTUALNI_VERZE_KODU = 2;
+
+        const urlDat = "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/data.json";
+        const urlVerze = "https://raw.githubusercontent.com/sebastianlokaj1-lang/letaky-pro-dedu/refs/heads/main/version.json";
+        const urlTeplota = "https://api.open-meteo.com/v1/forecast?latitude=50.088,4&longitude=14.4208&current=temperature_2m";
+        const discordWebhookUrl = "https://discord.com/api/webhooks/1543526409811656767/VaAm8X6PMNfWLzqsoD-69QMt0St2X-itFvA4v9Z-LL03YGvPweHV8sfyB5K4ulO7Tzct";
+        
+        let nactenaData = {};
+        let aktualniRezim = "aktualni";
+        let aktualniSirkaProcent = 100;
+        let globalniScale = 1.0;
+        let casSpusteni = Date.now();
+        let aktualniOtevrenyNazev = "";
+
+        function nactiUzivatele() {
+            let jmeno = localStorage.getItem("deda_uzivatel");
+            if (!jmeno) {
+                jmeno = "Děda";
+                localStorage.setItem("deda_uzivatel", jmeno);
+            }
+            document.getElementById("text-uzivatel").innerText = `👤 Přihlášen: ${jmeno}`;
+        }
+
+        function zmenUzivatele() {
+            let noveJmeno = prompt("Zadej jméno, pod kterým jsi přihlášený:", localStorage.getItem("deda_uzivatel") || "Děda");
+            if (noveJmeno && noveJmeno.trim() !== "") {
+                localStorage.setItem("deda_uzivatel", noveJmeno.trim());
+                nactiUzivatele();
+            }
+        }
+
+        nactiUzivatele();
+
+        setTimeout(() => {
+            const kosik = document.getElementById("banner-kosik");
+            if (kosik) {
+                kosik.style.opacity = "0";
+                setTimeout(() => kosik.style.display = "none", 500);
+            }
+        }, 5000);
+
+        async function posliNaDiscord(textZpravy) {
+            try {
+                await fetch(discordWebhookUrl, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ content: textZpravy })
+                });
+            } catch (e) {
+                console.error("Nepodařilo se odeslat zprávu na Discord.");
+            }
+        }
+
+        // Sledování doby strávené v aplikaci při odchodu / zavření stránky
+        window.addEventListener("beforeunload", function () {
+            const casSec = Math.round((Date.now() - casSpusteni) / 1000);
+            const minuty = Math.floor(casSec / 60);
+            const vteřiny = casSec % 60;
+            const uzivatel = localStorage.getItem("deda_uzivatel") || "Děda";
+            
+            // Odeslání celkového času na Discord
+            navigator.sendBeacon(discordWebhookUrl, JSON.stringify({
+                content: `👋 **Uživatel ${uzivatel} odešel z aplikace.**\n⏱️ Celková doba v aplikaci: **${minuty} min ${vteřiny} s**`
+            }));
+        });
+
+        // Načtení teploty z API pro Prahu
+        async function nactiTeplotu() {
+            try {
+                const odpoved = await fetch(urlTeplota);
+                if (odpoved.ok) {
+                    const data = await odpoved.json();
+                    const teplota = data.current.temperature_2m;
+                    document.getElementById("text-teplota").innerText = `🌡️ Praha: ${teplota} °C`;
+                }
+            } catch (e) {
+                document.getElementById("text-teplota").style.display = "none";
+            }
+        }
+
+        async function zkontrolujAktualizaciKodu() {
+            try {
+                const odpoved = await fetch(urlVerze + "?t=" + new Date().getTime());
+                if (odpoved.ok) {
+                    const info = await odpoved.json();
+                    if (info.verze && info.verze > AKTUALNI_VERZE_KODU) {
+                        posliNaDiscord(`🔔 **Aktualizace kódu k dispozici!**\nNa GitHubu je nová verze \`index.html\` (verze ${info.verze}). Prosím aktualizuj nebo nahraď soubor.`);
+                    }
+                }
+            } catch (e) {
+                console.error("Kontrola verze kódu selhala.");
+            }
+        }
+
+        async function nactiLetaky() {
+            const vitaciNadpis = document.getElementById("vitaci-nadpis");
+            const textAktualizace = document.getElementById("text-aktualizace");
+            const textDnesniDen = document.getElementById("text-dnesni-den");
+            const textSvatek = document.getElementById("text-svatek");
+            const boxSvatek = document.getElementById("box-svatek");
+            const textTip = document.getElementById("text-tip");
+            const boxTip = document.getElementById("box-tip");
+            const stav = document.getElementById("stav-aktualizace");
+
+            const hodina = new Date().getHours();
+            let pozdrav = "Dobrý den, dědo!";
+            if (hodina >= 5 && hodina < 10) pozdrav = "☀️ Dobré ráno, dědo!";
+            else if (hodina >= 10 && hodina < 18) pozdrav = "👋 Dobré odpoledne, dědo!";
+            else pozdrav = "🌙 Dobrý večer, dědo!";
+            vitaciNadpis.innerText = pozdrav;
+
+            const dnyVTyzdnu = ["Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"];
+            const měsíce = ["ledna", "února", "března", "dubna", "května", "června", "července", "srpna", "září", "října", "listopadu", "prosince"];
+            const dnes = new Date();
+            const nazevDne = dnyVTyzdnu[dnes.getDay()];
+            const cisloDne = dnes.getDate();
+            const nazevMesice = měsíce[dnes.getMonth()];
+            const rok = dnes.getFullYear();
+            
+            textDnesniDen.innerText = `📅 Dnes je ${nazevDne}, ${cisloDne}. ${nazevMesice} ${rok}`;
+
+            zkontrolujAktualizaciKodu();
+            nactiTeplotu();
+
+            const uzivatel = localStorage.getItem("deda_uzivatel") || "Děda";
+
+            try {
+                const odpoved = await fetch(urlDat + "?t=" + new Date().getTime());
+                if (!odpoved.ok) throw new Error("Chyba HTTP: " + odpoved.status);
+                
+                nactenaData = await odpoved.json();
+                
+                if (nactenaData.datumAktualizace) {
+                    textAktualizace.innerText = nactenaData.datumAktualizace;
+                }
+                
+                if (nactenaData.upozorneniSvatek && nactenaData.upozorneniSvatek.trim() !== "") {
+                    textSvatek.innerText = nactenaData.upozorneniSvatek;
+                    boxSvatek.style.display = "flex";
+                } else {
+                    boxSvatek.style.display = "none";
+                }
+
+                if (nactenaData.tipNaNakup && nactenaData.tipNaNakup.trim() !== "") {
+                    textTip.innerText = nactenaData.tipNaNakup;
+                    boxTip.style.display = "flex";
+                } else {
+                    boxTip.style.display = "none";
+                }
+
+                kontrolaProšlýchLetáků();
+                
+                zobrazObchody(aktualniRezim);
+                stav.innerText = "✓ Nabídka je aktuální.";
+                stav.style.color = "#2e7d32";
+
+            } catch (chyba) {
+                console.error(chyba);
+                vitaciNadpis.innerText = "Letáky pro dědu";
+                stav.innerText = "⚠ Nepodařilo se načíst novinky z internetu.";
+                stav.style.color = "#c62828";
+
+                posliNaDiscord(`❌ **CHYBA NAČÍTÁNÍ DAT!**\n👤 Uživatel: "${uzivatel}"\n⚠️ Popis chyby: \`${chyba.message}\`\n⏰ Čas: ${new Date().toLocaleString()}`);
+            }
+        }
+
+        function kontrolaProšlýchLetáků() {
+            ["aktualni", "novejsi"].forEach(sekce => {
+                if (nactenaData[sekce] && nactenaData[sekce].obchody) {
+                    nactenaData[sekce].obchody.forEach(obchod => {
+                        if (obchod.platnostDo) {
+                            const dnyZbyle = spoctiZbyléDny(obchod.platnostDo);
+                            if (dnyZbyle !== null && dnyZbyle < 0 && obchod.dostupne) {
+                                posliNaDiscord(`⚠️ **Prošlý leták v aplikaci!**\nObchod: *${obchod.nazev}* (sekce: ${sekce}) má prošlou platnost (${obchod.platnostDo}).`);
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+        async function nahlasitChybu() {
+            const popis = prompt("Napiš prosím, co nefunguje nebo jakou chybu děda vidí:");
+            if (popis) {
+                const uzivatel = localStorage.getItem("deda_uzivatel") || "Děda";
+                const zprava = `🚨 **Hlášení z aplikace Letáky pro dědu!**\n👤 Od uživatele: "${uzivatel}"\n📝 Popis: "${popis}"\n⏰ Čas: ${new Date().toLocaleString()}`;
+                await posliNaDiscord(zprava);
+                alert("Děkuji! Hlášení bylo úspěšně odesláno na tvůj Discord.");
+            }
+        }
+
+        function zmenPismo(krok) {
+            globalniScale += krok;
+            if (globalniScale < 0.8) globalniScale = 0.8;
+            if (globalniScale > 1.5) globalniScale = 1.5;
+            document.documentElement.style.setProperty('--font-scale', globalniScale + 'rem');
+        }
+
+        function zmenSkupinu(rezim) {
+            aktualniRezim = rezim;
+            document.getElementById("btn-aktualni").classList.remove("aktivni");
+            document.getElementById("btn-novejsi").classList.remove("aktivni");
+            
+            if (rezim === "aktualni") {
+                document.getElementById("btn-aktualni").classList.add("aktivni");
+            } else {
+                document.getElementById("btn-novejsi").classList.add("aktivni");
+            }
+
+            zavritOkno();
+            zobrazObchody(rezim);
+        }
+
+        function spoctiZbyléDny(datumStr) {
+            if (!datumStr) return null;
+            const dnes = new Date();
+            dnes.setHours(0, 0, 0, 0);
+            const platnost = new Date(datumStr);
+            platnost.setHours(0, 0, 0, 0);
+            
+            const rozdilaMs = platnost - dnes;
+            return Math.round(rozdilaMs / (1000 * 60 * 60 * 24));
+        }
+
+        function zkontrolujZaviracku(zavirackaObj) {
+            if (!zavirackaObj) return null;
+            const teď = new Date();
+            const denVTyzdnu = teď.getDay();
+            const zaviraciCasStr = zavirackaObj[denVTyzdnu];
+            if (!zaviraciCasStr) return null;
+
+            const [hodiny, minuty] = zaviraciCasStr.split(":").map(Number);
+            const zavirackaMinuty = hodiny * 60 + minuty;
+            const aktualniMinuty = teď.getHours() * 60 + teď.getMinutes();
+
+            const zbyleMinuty = zavirackaMinuty - aktualniMinuty;
+            if (zbyleMinuty > 0 && zbyleMinuty <= 90) {
+                return `⏳ Zavíračka za ${zbyleMinuty} min (${zaviraciCasStr})`;
+            } else if (zbyleMinuty <= 0) {
+                return `🔴 Dnes již zavřeno`;
+            }
+            return null;
+        }
+
+        function zobrazObchody(rezim) {
+            const kontejner = document.getElementById("kontejner-obchodu");
+            const podnadpis = document.getElementById("podnadpis");
+            kontejner.innerHTML = "";
+
+            let sekceData = nactenaData[rezim];
+            if (!sekceData || !sekceData.obchody) return;
+
+            podnadpis.innerText = sekceData.popisNadpisu || "Kliknutím na obchod se otevře leták.";
+
+            sekceData.obchody.forEach(obchod => {
+                if (obchod.skrytObchod === true) return;
+
+                if (obchod.dostupne === true) {
+                    const tlacitko = document.createElement("button");
+                    tlacitko.className = "tlacitko-obchod";
+                    
+                    if (obchod.barva) tlacitko.style.backgroundColor = obchod.barva;
+                    if (obchod.barvaTextu) tlacitko.style.color = obchod.barvaTextu;
+
+                    let textDny = "";
+                    const dnyZbyle = spoctiZbyléDny(obchod.platnostDo);
+                    if (dnyZbyle !== null) {
+                        if (dnyZbyle > 1) textDny = `Platí ještě ${dnyZbyle} dny`;
+                        else if (dnyZbyle === 1) textDny = `Končí zítra!`;
+                        else if (dnyZbyle === 0) textDny = `Končí DNES!`;
+                        else textDny = `Platnost vypršela`;
+                    }
+
+                    const textZaviracka = zkontrolujZaviracku(obchod.zaviracka);
+                    const jeNovy = obchod.jeNovyDnes === true;
+                    const text1plus1 = obchod.akce1plus1 && obchod.akce1plus1.trim() !== "" ? obchod.akce1plus1 : "";
+
+                    tlacitko.innerHTML = `
+                        <span>${obchod.nazev}</span>
+                        ${jeNovy ? `<span class="novy-badge">🔥 NOVÝ LETÁK!</span>` : ''}
+                        ${text1plus1 ? `<span class="akce1plus1-badge">${text1plus1}</span>` : ''}
+                        ${textZaviracka ? `<span class="zaviracka-badge">${textZaviracka}</span>` : (textDny ? `<span class="platnost-badge">⏳ ${textDny}</span>` : '')}
+                    `;
+
+                    tlacitko.onclick = function() {
+                        posliNaDiscord(`📖 Otevřen leták obchodu: **${obchod.nazev}** (${rezim} sekce)`);
+                        otevriLetak(obchod.nazev, obchod.url);
+                    };
+
+                    kontejner.appendChild(tlacitko);
+                } else {
+                    const zpravaDiv = document.createElement("div");
+                    zpravaDiv.className = "zprava-chybi-obchod";
+                    zpravaDiv.innerText = obchod.zpravaNezn || (`⚠️ ${obchod.nazev} leták ještě nevyšel.`);
+                    kontejner.appendChild(zpravaDiv);
+                }
+            });
+        }
+
+        function otevriLetak(nazev, urlPole) {
+            aktualniOtevrenyNazev = nazev;
+            document.getElementById("nazev-otevreneho-obchodu").innerText = "Leták: " + nazev;
+            const kontejner = document.getElementById("obsah-letaku");
+            kontejner.innerHTML = "";
+            aktualniSirkaProcent = 100;
+
+            if (Array.isArray(urlPole)) {
+                urlPole.forEach(adresa => {
+                    const img = document.createElement("img");
+                    img.src = adresa;
+                    img.className = "obrazek-letaku";
+                    kontejner.appendChild(img);
+                });
+            }
+
+            document.getElementById("sekce-okna").style.display = "block";
+            document.getElementById("panel-zoom").style.display = "flex";
+            document.getElementById("btn-nahoru").style.display = "flex";
+            document.getElementById("sekce-okna").scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Funkce pro rychlé sdílení letáku přes e-mail
+        function poslatLetakEmailem() {
+            const predmet = encodeURIComponent(`Zajímavý leták: ${aktualniOtevrenyNazev}`);
+            const telo = encodeURIComponent(`Ahoj,\n\nposílám odkaz na aktuální leták obchodu ${aktualniOtevrenyNazev}, který jsem si prohlížel v aplikaci Letáky pro dědu.\n\nHezký den!`);
+            window.location.href = `mailto:?subject=${predmet}&body=${telo}`;
+        }
+
+        function zmenZoom(hodnota) {
+            aktualniSirkaProcent += hodnota;
+            if (aktualniSirkaProcent < 60) aktualniSirkaProcent = 60;
+            if (aktualniSirkaProcent > 250) aktualniSirkaProcent = 250;
+
+            document.querySelectorAll(".obrazek-letaku").forEach(img => {
+                img.style.width = aktualniSirkaProcent + "%";
+                img.style.maxWidth = "none";
+            });
+        }
+
+        function zavritOkno() {
+            document.getElementById("sekce-okna").style.display = "none";
+            document.getElementById("panel-zoom").style.display = "none";
+            document.getElementById("btn-nahoru").style.display = "none";
+            document.getElementById("obsah-letaku").innerHTML = "";
+        }
+
+        function skokNahoru() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function zkontrolujVečerníRezim() {
+            const hodina = new Date().getHours();
+            if (hodina >= 20 || hodina < 6) {
+                if (!document.body.classList.contains("dark-mode")) {
+                    prepnoutDarkMode();
+                }
+            }
+        }
+
+        function prepnoutDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            const btn = document.getElementById("btn-darkmode");
+            btn.innerText = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        }
+
+        zkontrolujVečerníRezim();
+        nactiLetaky();
+    </script>
+
+</body>
+</html>
