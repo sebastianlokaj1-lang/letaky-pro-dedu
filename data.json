@@ -3,7 +3,7 @@
   "datumAktualizace": "📅 Aktualizováno: 29. srpna 2026",
   "novaVerzeZprava": "🎉 Novinka v aplikaci: Přidali jsme Tesco, Dr. Max a možnost schovat obchody!",
   "upozorneniSvatek": "",
-  "tipNaNakup": "Tip od Ai:",
+  "tipNaNakup": "Tip od Ai:v penny máji CIBULE Kuchyňská žlutá za 12,90Kč za 1kg",
   "aktualni": {
     "popisNadpisu": "Platné letáky (tento týden)",
     "obchody": [
@@ -133,9 +133,9 @@
       },
       {
         "nazev": "Penny (Nový)",
-        "dostupne": false,
+        "dostupne": true,
         "skrytObchod": false,
-        "platnostDo": "2026-09-10",
+        "platnostDo": "2026-09-08",
         "jeNovyDnes": false,
         "akce1plus1": "",
         "zpravaNezn": "⚠️ Penny (nový) leták ještě nevyšel.",
